@@ -2,10 +2,10 @@
 # @Author: shramesh
 # @Date:   2017-12-04 23:53:08
 # @Last Modified by:   shramesh
-# @Last Modified time: 2017-12-05 00:34:52
+# @Last Modified time: 2017-12-05 00:51:21
 
 
-with open("input.txt") as ip:
+with open("test.txt") as ip:
 	maze = [int(x.strip()) for x in ip.readlines()]
 	# print maze
 	current_pointer = 0
@@ -22,4 +22,4 @@ with open("input.txt") as ip:
 		current_pointer += old_offset
 		no_steps += 1
 		
-	print no_steps
+	assert no_steps ==  10, "Nope!"
