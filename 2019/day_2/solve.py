@@ -1,3 +1,6 @@
+import random
+from copy import copy
+
 
 def eval_intcode(numbers, all_nums):
     if len(numbers) != 4 and numbers[0] == 99:
@@ -57,8 +60,7 @@ def eval_and_find_at_address(noun, verb, all_nums):
     all_nums = process_nums(all_nums)
     return all_nums
 
-import random
-from copy import copy
+
 
 def identify_noun_verb_combination(all_nums):
     all_choices = range(0, len(all_nums))
